@@ -1,5 +1,6 @@
 import { Box } from '@chakra-ui/react'
 import { Header } from 'components/Layout/Header'
+import { MAX_WIDTH } from 'configs'
 import React, { ReactNode } from 'react'
 
 type Props = {
@@ -10,16 +11,8 @@ export const Layout = ({ children }: Props) => {
   return (
     <>
       <Header />
-      <Box
-        textAlign='center'
-        fontSize='xl'
-        w={['90%', '85%', '80%']}
-        maxW={900}
-        mx='auto'
-      >
-        <Box pt={7} pb={10}>
-          {children}
-        </Box>
+      <Box maxW={MAX_WIDTH} px={[4, 6, 8, 12, 16]} mx='auto'>
+        {children}
       </Box>
       {/* <Footer /> */}
     </>
