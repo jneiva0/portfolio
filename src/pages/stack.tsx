@@ -25,8 +25,7 @@ const StackPage: NextPage = () => {
               maxW='lg'
               textAlign='center'
             >
-              Uma lista das ferramentas e tecnologias que eu mais uso no dia a
-              dia.
+              Uma lista das ferramentas e tecnologias que eu uso no dia a dia.
             </Text>
           </VStack>
           <Box as='section'>
