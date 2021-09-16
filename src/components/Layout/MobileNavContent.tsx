@@ -68,6 +68,7 @@ export const MobileNavContent = (props: Props) => {
             <Stack mt={6} spacing={4} px={6}>
               <NavLink href='/'>Home</NavLink>
               <NavLink href='/sobre'>Sobre</NavLink>
+              <NavLink href='/stack'>Tech Stack</NavLink>
             </Stack>
           </Flex>
         </motion.div>

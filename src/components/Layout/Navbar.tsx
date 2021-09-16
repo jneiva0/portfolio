@@ -17,6 +17,7 @@ export const Navbar = () => {
       <HStack pr={8} display={{ base: 'none', lg: 'flex' }}>
         <LinkButton href='/'>Home</LinkButton>
         <LinkButton href='/sobre'>Sobre</LinkButton>
+        <LinkButton href='/stack'>Tech Stack</LinkButton>
       </HStack>
       <ColorModeToggle />
       <IconButton
