@@ -1,11 +1,18 @@
 import {
   Avatar,
   Box,
+  Divider,
   Flex,
   Heading,
+  HStack,
+  Stack,
+  Tag,
   Text,
   useColorModeValue,
+  VStack,
 } from '@chakra-ui/react'
+import { ImageBox } from 'components/ImageBox'
+import { LinkButton } from 'components/Layout/LinkButton'
 import { Page } from 'components/Layout/Page'
 import { MotionBox } from 'components/motion'
 import type { NextPage } from 'next'
@@ -71,8 +78,41 @@ const Home: NextPage = () => {
             com foco na experiência do usuário.
           </Heading>
         </Box>
+        <LinkButton
+          href='/stack'
+          my={5}
+          variant='ghost'
+          colorScheme='telegram'
+          isFullWidth
+          maxW='md'
+        >
+          Conheça minha Tech Stack
+        </LinkButton>
+        <ProjectSection />
       </Flex>
     </Page>
+  )
+}
+
+const ProjectSection = () => {
+  return (
+    <Box w='full' mt={4} px={4} textAlign='left'>
+      <Heading fontSize='xl'>Projetos</Heading>
+      <Divider my={2} />
+      <Stack>
+        <Box shadow='md' borderWidth={1} rounded='md' p={3}>
+          <HStack>
+            <ImageBox imagem='/react.png' alt='React' />
+            <VStack h='full' align='start' justify='flex-start'>
+              <HStack>
+                <Text>Baixa Música</Text>
+                <Tag>React</Tag>
+              </HStack>
+            </VStack>
+          </HStack>
+        </Box>
+      </Stack>
+    </Box>
   )
 }
 

@@ -1,22 +1,11 @@
+import { HStack, Link, Text, useColorModeValue, VStack } from '@chakra-ui/react'
 import { MotionBox } from 'components/motion'
 import { Skill } from 'configs'
-import React from 'react'
 import NextLink from 'next/link'
-import {
-  Box,
-  Image,
-  Text,
-  HStack,
-  useColorModeValue,
-  Link,
-  VStack,
-  Skeleton,
-} from '@chakra-ui/react'
-import { usePalette } from 'react-palette'
+import React from 'react'
+import { ImageBox } from './ImageBox'
 
 export const SkillCard = ({ skill }: { skill: Skill }) => {
-  const { data, loading } = usePalette(skill.imagem)
-
   return (
     <MotionBox whileHover={{ y: -5 }}>
       <NextLink href={skill.link} passHref>
@@ -30,27 +19,7 @@ export const SkillCard = ({ skill }: { skill: Skill }) => {
             _hover={{ shadow: 'lg' }}
             borderColor={useColorModeValue('gray.100', 'gray.700')}
           >
-            <Box rounded='lg' p={2} overflow='hidden' pos='relative'>
-              <Box
-                bg={data.darkVibrant}
-                pos='absolute'
-                top={0}
-                left={0}
-                w='full'
-                h='full'
-                opacity={0.2}
-              />
-              {loading ? (
-                <Skeleton height={26} width={26} />
-              ) : (
-                <Image
-                  src={skill.imagem}
-                  alt={skill.nome}
-                  fallbackSrc='https://via.placeholder.com/150'
-                  boxSize={26}
-                />
-              )}
-            </Box>
+            <ImageBox alt={skill.nome} imagem={skill.imagem} />
             <VStack
               align='start'
               justify='flex-start'
