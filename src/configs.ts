@@ -21,16 +21,28 @@ export const skillList: Skill[] = [
     imagem: '/typescript.png',
   },
   {
+    nome: 'JavaScript',
+    descricao: 'Linguagem',
+    link: 'https://www.javascript.com/',
+    imagem: '/javascript.png',
+  },
+  {
     nome: 'NodeJS',
     descricao: 'Backend',
     link: 'https://nodejs.org/',
     imagem: '/nodejs.svg',
   },
   {
-    nome: 'JavaScript',
-    descricao: 'Linguagem',
-    link: 'https://www.javascript.com/',
-    imagem: '/javascript.png',
+    nome: 'Express',
+    descricao: 'Backend',
+    link: 'https://expressjs.com/',
+    imagem: '/express.png',
+  },
+  {
+    nome: 'NestJS',
+    descricao: 'Backend',
+    link: 'https://nestjs.com/',
+    imagem: '/nest.svg',
   },
   {
     nome: 'PostgreSQL',

@@ -14,7 +14,7 @@ import React from 'react'
 
 const StackPage: NextPage = () => {
   return (
-    <Page titulo='Skills' keywords='react, typescript, node'>
+    <Page titulo='Tech Stack - João Neiva' keywords='react, typescript, node'>
       <VStack py={6} spacing={8}>
         <Box as='section'>
           <VStack>
