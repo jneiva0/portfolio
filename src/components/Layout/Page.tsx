@@ -15,7 +15,12 @@ const variants = {
   exit: { opacity: 0, x: 0, y: -100 },
 }
 
-export const Page = ({ children, descricao, titulo, keywords }: Props) => {
+export const Page = ({
+  children,
+  descricao,
+  titulo = 'João Vitor Neiva - Programador Full Stack',
+  keywords,
+}: Props) => {
   return (
     <>
       <Head>
@@ -29,10 +34,7 @@ export const Page = ({ children, descricao, titulo, keywords }: Props) => {
           name='description'
           content={descricao || 'Programador Full Stack. '}
         />
-        <meta
-          property='og:title'
-          content={titulo || 'João Vitor Neiva - Programador Full Stack'}
-        />
+        <meta property='og:title' content={titulo} />
         <title>{titulo}</title>
       </Head>
       <motion.main
