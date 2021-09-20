@@ -7,6 +7,10 @@ export type Skill = {
   link: string
 }
 
+export type Project = {
+  tags: string[]
+} & Skill
+
 export const skillList: Skill[] = [
   {
     nome: 'React',
@@ -73,5 +77,16 @@ export const skillList: Skill[] = [
     descricao: 'UI Library',
     link: 'https://chakra-ui.com/',
     imagem: '/chakra.png',
+  },
+]
+
+export const projectList: Project[] = [
+  {
+    nome: 'Baixa Música',
+    descricao:
+      'Um site para fazer download de músicas a partir do YouTube. Você coloca o link e a API extrai um arquivo .mp3 a partir do vídeo e disponibiliza para download.',
+    imagem: '/react.png',
+    link: 'https://baixa-musica.vercel.app',
+    tags: ['React', 'TypeScript', 'NestJS', 'NextJS'],
   },
 ]
