@@ -1,6 +1,6 @@
 import { Text, HStack, IconButton, VStack, Link } from '@chakra-ui/react'
 import React from 'react'
-import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
 export const Footer = () => {
   return (
@@ -11,6 +11,9 @@ export const Footer = () => {
         </Link>
         <Link href='https://www.linkedin.com/in/jneiva0/' isExternal>
           <IconButton aria-label='LinkedIn' icon={<FaLinkedin />} />
+        </Link>
+        <Link href='mailto:jneiva42@gmail.com' isExternal>
+          <IconButton aria-label='Email' icon={<FaEnvelope />} />
         </Link>
         <Link href='https://instagram.com/jv.neiva/' isExternal>
           <IconButton aria-label='Instagram' icon={<FaInstagram />} />
