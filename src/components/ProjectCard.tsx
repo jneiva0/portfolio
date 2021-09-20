@@ -49,6 +49,20 @@ export const ProjectCard = ({ project }: { project: Project }) => (
           </Button>
         </LinkOverlay>
       </LinkBox>
+      {project.repo && (
+        <LinkBox w='full'>
+          <LinkOverlay href={project.repo} isExternal>
+            <Button
+              isFullWidth
+              variant='solid'
+              // colorScheme='telegram'
+              rightIcon={<LinkIcon />}
+            >
+              Repo Github
+            </Button>
+          </LinkOverlay>
+        </LinkBox>
+      )}
     </VStack>
   </Box>
 )
