@@ -6,7 +6,6 @@ export const useRouteChanged = (fn: () => void) => {
   useEffect(() => {
     const handleRouteChange = (url: string) => {
       fn()
-      console.log('Navegando para: ', url)
     }
 
     router.events.on('routeChangeComplete', handleRouteChange)

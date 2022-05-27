@@ -7,9 +7,9 @@ import { ImageBox } from './ImageBox'
 
 export const SkillCard = ({ skill }: { skill: Skill }) => {
   return (
-    <MotionBox whileHover={{ y: -5 }}>
-      <NextLink href={skill.link} passHref>
-        <Link isExternal _hover={{ color: 'blue.500' }}>
+    <NextLink href={skill.link} passHref>
+      <Link isExternal _hover={{ color: 'blue.500' }}>
+        <MotionBox whileHover={{ y: -5 }}>
           <HStack
             p={4}
             bg={useColorModeValue('white', 'gray.800')}
@@ -40,8 +40,8 @@ export const SkillCard = ({ skill }: { skill: Skill }) => {
               </VStack>
             </VStack>
           </HStack>
-        </Link>
-      </NextLink>
-    </MotionBox>
+        </MotionBox>
+      </Link>
+    </NextLink>
   )
 }

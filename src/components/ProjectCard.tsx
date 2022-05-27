@@ -19,7 +19,6 @@ export const ProjectCard = ({ project }: { project: Project }) => (
     <VStack h='full' align='start' justify='flex-start'>
       <Box w='full'>
         <HStack>
-          {/* <ImageBox flexShrink={0} imagem={project.imagem} alt={project.nome} /> */}
           <Text fontSize='xl'>{project.nome}</Text>
         </HStack>
         <Divider />
