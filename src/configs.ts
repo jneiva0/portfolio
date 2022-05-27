@@ -1,16 +1,19 @@
 export const MAX_WIDTH = 900
 
-export type Skill = {
+type Item = {
   nome: string
-  imagem: string
   descricao: string
   link: string
 }
 
+export type Skill = {
+  imagem: string
+} & Item
+
 export type Project = {
   tags: string[]
   repo?: string
-} & Skill
+} & Item
 
 export const skillList: Skill[] = [
   {
@@ -83,20 +86,26 @@ export const skillList: Skill[] = [
 
 export const projectList: Project[] = [
   {
-    nome: 'Baixa Música',
+    nome: 'Ponder',
     descricao:
-      'Um site para fazer download de músicas a partir do YouTube. Você coloca o link e a API extrai um arquivo .mp3 a partir do vídeo e disponibiliza para download.',
-    imagem: '/react.png',
-    link: 'https://baixa-musica.vercel.app',
-    tags: ['React', 'Node', 'TypeScript', 'NestJS'],
+      'Ponder é um app simples, visando ser uma forma rápida para qualquer pessoa anotar seus pensamentos.  Pode ser usado como agenda, lista de tarefas ou apenas um lugar para salvar anotações.',
+    link: 'https://ponder.jneiva.dev',
+    tags: ['React', 'TypeScript', 'Firebase'],
+    repo: 'https://github.com/jneiva0/ponder',
   },
   {
     nome: 'Portfólio',
     descricao:
       'Meu site e Portfólio pessoal, desenvolvido com React, Chakra UI e NextJS.',
-    imagem: '/react.png',
     link: 'https://jvneiva.vercel.app',
     tags: ['React', 'NextJS', 'TypeScript', 'Chakra UI'],
     repo: 'https://github.com/jneiva0/portfolio',
+  },
+  {
+    nome: 'Baixa Música',
+    descricao:
+      'Um site para fazer download de músicas a partir do YouTube. Você coloca o link e a API extrai um arquivo .mp3 a partir do vídeo e disponibiliza para download.',
+    link: 'https://baixa-musica.vercel.app',
+    tags: ['React', 'Node', 'TypeScript', 'NestJS'],
   },
 ]
