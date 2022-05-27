@@ -97,7 +97,7 @@ export const projectList: Project[] = [
     nome: 'Portfólio',
     descricao:
       'Meu site e Portfólio pessoal, desenvolvido com React, Chakra UI e NextJS.',
-    link: 'https://jvneiva.vercel.app',
+    link: 'https://jneiva.dev',
     tags: ['React', 'NextJS', 'TypeScript', 'Chakra UI'],
     repo: 'https://github.com/jneiva0/portfolio',
   },
