@@ -1,16 +1,8 @@
-import {
-  Avatar,
-  Box,
-  Flex,
-  Heading,
-  Text,
-  useColorModeValue,
-} from '@chakra-ui/react'
+import { Avatar, Box, Flex, Heading, Text, useColorModeValue } from '@chakra-ui/react'
 import { LinkButton } from 'components/Layout/LinkButton'
 import { Page } from 'components/Layout/Page'
 import { MotionBox } from 'components/motion'
 import type { NextPage } from 'next'
-import React from 'react'
 import { ProjectSection } from '../components/ProjectSection'
 
 const duration = 0.5
@@ -20,13 +12,7 @@ const Home: NextPage = () => {
 
   return (
     <Page>
-      <Flex
-        as='section'
-        flexDir='column'
-        py={4}
-        align='center'
-        textAlign='center'
-      >
+      <Flex as='section' flexDir='column' py={4} align='center' textAlign='center'>
         <MotionBox
           opacity='0'
           initial={{
@@ -43,10 +29,7 @@ const Home: NextPage = () => {
           mt={5}
           mb={2}
         >
-          <Avatar
-            size='2xl'
-            src={'https://avatars.githubusercontent.com/u/10120652?v=4'}
-          />
+          <Avatar size='2xl' src={'https://avatars.githubusercontent.com/u/10120652?v=4'} />
         </MotionBox>
         <Box>
           <Heading as='h1' fontSize='2xl' fontWeight='500' py='2'>
@@ -73,14 +56,7 @@ const Home: NextPage = () => {
             com foco na experiência do usuário.
           </Heading>
         </Box>
-        <LinkButton
-          href='/stack'
-          my={5}
-          variant='ghost'
-          colorScheme='telegram'
-          isFullWidth
-          maxW='md'
-        >
+        <LinkButton href='/stack' my={5} variant='ghost' colorScheme='telegram' w='full' maxW='md'>
           Conheça minha Tech Stack
         </LinkButton>
         <ProjectSection />

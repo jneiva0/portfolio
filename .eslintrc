@@ -1,10 +1,5 @@
 {
-  "plugins": ["@typescript-eslint"],
-  "extends": [
-    "next",
-    "next/core-web-vitals",
-    "plugin:@typescript-eslint/recommended"
-  ],
+  "extends": ["next/core-web-vitals"],
   "rules": {
     "prefer-const": "warn",
     "@typescript-eslint/explicit-module-boundary-types": "off"

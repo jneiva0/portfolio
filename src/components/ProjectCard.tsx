@@ -12,7 +12,6 @@ import {
   Wrap,
 } from '@chakra-ui/react'
 import { Project } from 'configs'
-import React from 'react'
 
 export const ProjectCard = ({ project }: { project: Project }) => (
   <Box shadow='md' borderWidth={1} rounded='md' py={3} px={3}>
@@ -38,12 +37,7 @@ export const ProjectCard = ({ project }: { project: Project }) => (
       <Divider />
       <LinkBox w='full'>
         <LinkOverlay href={project.link} isExternal>
-          <Button
-            isFullWidth
-            variant='solid'
-            colorScheme='telegram'
-            rightIcon={<LinkIcon />}
-          >
+          <Button w='full' variant='solid' colorScheme='telegram' rightIcon={<LinkIcon />}>
             Acessar
           </Button>
         </LinkOverlay>
@@ -52,7 +46,7 @@ export const ProjectCard = ({ project }: { project: Project }) => (
         <LinkBox w='full'>
           <LinkOverlay href={project.repo} isExternal>
             <Button
-              isFullWidth
+              w='full'
               variant='solid'
               // colorScheme='telegram'
               rightIcon={<LinkIcon />}
