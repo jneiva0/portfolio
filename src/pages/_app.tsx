@@ -1,13 +1,12 @@
-import type { AppProps } from 'next/app'
 import { Box, ChakraProvider } from '@chakra-ui/react'
-import { tema } from 'lib/tema'
-import React from 'react'
-import { Layout } from 'components/Layout/Layout'
-import { useRouter } from 'next/dist/client/router'
-import { AnimatePresence } from 'framer-motion'
 import '@fontsource/poppins'
+import { Layout } from 'components/Layout/Layout'
+import { AnimatePresence } from 'framer-motion'
+import { tema } from 'lib/tema'
+import type { AppProps } from 'next/app'
+import { useRouter } from 'next/dist/client/router'
 
-function MyApp({ Component, pageProps }: AppProps) {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   const router = useRouter()
 
   return (
@@ -26,4 +25,5 @@ function MyApp({ Component, pageProps }: AppProps) {
     </ChakraProvider>
   )
 }
+
 export default MyApp
