@@ -1,3 +1,5 @@
+import { DefaultSeoProps } from 'next-seo'
+
 export const MAX_WIDTH = 900
 
 type Item = {
@@ -95,8 +97,7 @@ export const projectList: Project[] = [
   },
   {
     nome: 'Portfólio',
-    descricao:
-      'Meu site e Portfólio pessoal, desenvolvido com React, Chakra UI e NextJS.',
+    descricao: 'Meu site e Portfólio pessoal, desenvolvido com React, Chakra UI e NextJS.',
     link: 'https://jneiva.dev',
     tags: ['React', 'NextJS', 'TypeScript', 'Chakra UI'],
     repo: 'https://github.com/jneiva0/portfolio',
@@ -109,3 +110,29 @@ export const projectList: Project[] = [
     tags: ['React', 'Node', 'TypeScript', 'NestJS'],
   },
 ]
+
+export const SeoConfig: DefaultSeoProps = {
+  title: 'Full Stack Developer',
+  titleTemplate: '%s | João Vitor Neiva',
+  description: 'Site pessoal do João Vitor Neiva, Full Stack Developer.',
+  canonical: 'https://jneiva.dev/',
+
+  openGraph: {
+    type: 'website',
+    locale: 'pt_BR',
+    url: 'https://jneiva.dev/',
+    site_name: 'João Vitor Neiva',
+    title: 'Programador Full Stack',
+    description: 'Site pessoal do João Vitor Neiva, Full Stack Developer.',
+
+    images: [
+      {
+        url: 'https://jneiva.dev/og-image.jpg',
+        width: 1200,
+        height: 500,
+        alt: 'João Vitor Neiva',
+      },
+    ],
+  },
+  robotsProps: {},
+}

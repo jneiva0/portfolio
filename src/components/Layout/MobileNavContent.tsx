@@ -9,7 +9,7 @@ import {
 import { LinkButton, LinkButtonProps } from 'components/Layout/LinkButton'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useRouteChanged } from 'hooks/useRouteChanged'
-import React from 'react'
+import { useEffect, useRef } from 'react'
 
 type Props = {
   isOpen: boolean
@@ -19,14 +19,14 @@ type Props = {
 export const MobileNavContent = (props: Props) => {
   const { isOpen, onClose } = props
 
-  const closeBtnRef = React.useRef<HTMLButtonElement>(null)
+  const closeBtnRef = useRef<HTMLButtonElement>(null)
   const color = useColorModeValue('white', 'gray.800')
 
   const showOnBreakpoint = useBreakpointValue({ base: true, lg: false })
 
   useRouteChanged(onClose)
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (showOnBreakpoint == false) {
       onClose()
     }
@@ -77,6 +77,4 @@ export const MobileNavContent = (props: Props) => {
   )
 }
 
-const NavLink = (props: LinkButtonProps) => (
-  <LinkButton justifyContent='flex-start' {...props} />
-)
+const NavLink = (props: LinkButtonProps) => <LinkButton justifyContent='flex-start' {...props} />

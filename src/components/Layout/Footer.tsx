@@ -1,5 +1,4 @@
 import { HStack, IconButton, Link, Text, VStack } from '@chakra-ui/react'
-import React from 'react'
 import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
 export const Footer = () => {

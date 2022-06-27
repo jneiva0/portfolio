@@ -1,20 +1,12 @@
-import {
-  Box,
-  Heading,
-  Text,
-  VStack,
-  useColorModeValue,
-  SimpleGrid,
-} from '@chakra-ui/react'
+import { Box, Heading, SimpleGrid, Text, useColorModeValue, VStack } from '@chakra-ui/react'
 import { Page } from 'components/Layout/Page'
 import { SkillCard } from 'components/SkillCard'
 import { skillList } from 'configs'
 import { NextPage } from 'next'
-import React from 'react'
 
 const StackPage: NextPage = () => {
   return (
-    <Page titulo='Tech Stack - João Neiva' keywords='react, typescript, node'>
+    <Page title='Tech Stack'>
       <VStack py={6} spacing={8}>
         <Box as='section'>
           <VStack>

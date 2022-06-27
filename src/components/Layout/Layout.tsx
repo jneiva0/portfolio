@@ -1,7 +1,7 @@
 import { Box } from '@chakra-ui/react'
 import { Header } from 'components/Layout/Header'
 import { MAX_WIDTH } from 'configs'
-import React, { ReactNode } from 'react'
+import { ReactNode } from 'react'
 import { Footer } from './Footer'
 
 type Props = {

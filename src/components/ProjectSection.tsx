@@ -1,6 +1,5 @@
 import { Box, Divider, Heading, Stack } from '@chakra-ui/react'
 import { projectList } from 'configs'
-import React from 'react'
 import { ProjectCard } from './ProjectCard'
 
 export const ProjectSection = () => {

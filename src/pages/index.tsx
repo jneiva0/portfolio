@@ -2,8 +2,8 @@ import { Avatar, Box, Flex, Heading, Text, useColorModeValue } from '@chakra-ui/
 import { LinkButton } from 'components/Layout/LinkButton'
 import { Page } from 'components/Layout/Page'
 import { MotionBox } from 'components/motion'
+import { ProjectSection } from 'components/ProjectSection'
 import type { NextPage } from 'next'
-import { ProjectSection } from '../components/ProjectSection'
 
 const duration = 0.5
 
@@ -11,7 +11,7 @@ const Home: NextPage = () => {
   const color = useColorModeValue('telegram.500', 'telegram.400')
 
   return (
-    <Page>
+    <Page title='Full Stack Developer' titleTemplate='João Vitor Neiva | %s'>
       <Flex as='section' flexDir='column' py={4} align='center' textAlign='center'>
         <MotionBox
           opacity='0'
@@ -29,7 +29,11 @@ const Home: NextPage = () => {
           mt={5}
           mb={2}
         >
-          <Avatar size='2xl' src={'https://avatars.githubusercontent.com/u/10120652?v=4'} />
+          <Avatar
+            size='2xl'
+            src={'https://avatars.githubusercontent.com/u/10120652?v=4'}
+            name='João Neiva'
+          />
         </MotionBox>
         <Box>
           <Heading as='h1' fontSize='2xl' fontWeight='500' py='2'>

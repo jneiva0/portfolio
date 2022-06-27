@@ -1,12 +1,6 @@
 import { HamburgerIcon, MoonIcon, SunIcon } from '@chakra-ui/icons'
-import {
-  HStack,
-  IconButton,
-  useColorMode,
-  useDisclosure,
-} from '@chakra-ui/react'
+import { HStack, IconButton, useColorMode, useDisclosure } from '@chakra-ui/react'
 import { MobileNavContent } from 'components/Layout/MobileNavContent'
-import React from 'react'
 import { LinkButton } from './LinkButton'
 
 export const Navbar = () => {

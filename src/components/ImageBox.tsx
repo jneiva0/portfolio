@@ -1,4 +1,3 @@
-import React from 'react'
 import { Box, BoxProps, Image, Skeleton } from '@chakra-ui/react'
 import { usePalette } from 'react-palette'
 
@@ -13,15 +12,7 @@ export const ImageBox = ({ imagem, alt, size = 26, ...props }: Props) => {
 
   return (
     <Box rounded='lg' p={2} overflow='hidden' pos='relative' {...props}>
-      <Box
-        bg={data.darkVibrant}
-        pos='absolute'
-        top={0}
-        left={0}
-        w='full'
-        h='full'
-        opacity={0.2}
-      />
+      <Box bg={data.darkVibrant} pos='absolute' top={0} left={0} w='full' h='full' opacity={0.2} />
       {loading ? (
         <Skeleton height={size} width={size} />
       ) : (
