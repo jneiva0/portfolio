@@ -5,6 +5,7 @@ import { Layout } from 'components/Layout/Layout'
 import { SeoConfig } from 'configs'
 import { AnimatePresence } from 'framer-motion'
 import { tema } from 'lib/tema'
+import { appWithTranslation } from 'next-i18next'
 import { DefaultSeo } from 'next-seo'
 import type { AppProps } from 'next/app'
 
@@ -30,4 +31,4 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => {
   )
 }
 
-export default MyApp
+export default appWithTranslation(MyApp)

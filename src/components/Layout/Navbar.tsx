@@ -5,6 +5,7 @@ import {
   useColorMode,
   useDisclosure,
 } from '@chakra-ui/react'
+import { I18nButton } from 'components/I18nButton'
 import { MobileNavContent } from 'components/Layout/MobileNavContent'
 import { LinkButton } from './LinkButton'
 
@@ -19,6 +20,7 @@ export const Navbar = () => {
         <LinkButton href='/stack'>Tech Stack</LinkButton>
       </HStack>
       <ColorModeToggle />
+      <I18nButton />
       <IconButton
         onClick={mobileNav.onOpen}
         aria-label='toggle navigation'
