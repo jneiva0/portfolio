@@ -67,7 +67,7 @@ export const MobileNavContent = (props: Props) => {
             </Flex>
             <Stack mt={6} spacing={4} px={6}>
               <NavLink href='/'>Home</NavLink>
-              <NavLink href='/sobre'>Sobre</NavLink>
+              <NavLink href='/about'>Sobre</NavLink>
               <NavLink href='/stack'>Tech Stack</NavLink>
             </Stack>
           </Flex>
@@ -77,4 +77,6 @@ export const MobileNavContent = (props: Props) => {
   )
 }
 
-const NavLink = (props: LinkButtonProps) => <LinkButton justifyContent='flex-start' {...props} />
+const NavLink = (props: LinkButtonProps) => (
+  <LinkButton justifyContent='flex-start' {...props} />
+)
