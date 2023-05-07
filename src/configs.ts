@@ -97,17 +97,11 @@ export const projectList: Project[] = [
   },
   {
     nome: 'Portfólio',
-    descricao: 'Meu site e Portfólio pessoal, desenvolvido com React, Chakra UI e NextJS.',
+    descricao:
+      'Meu site e Portfólio pessoal, desenvolvido com React, Chakra UI e NextJS.',
     link: 'https://jneiva.dev',
     tags: ['React', 'NextJS', 'TypeScript', 'Chakra UI'],
     repo: 'https://github.com/jneiva0/portfolio',
-  },
-  {
-    nome: 'Baixa Música',
-    descricao:
-      'Um site para fazer download de músicas a partir do YouTube. Você coloca o link e a API extrai um arquivo .mp3 a partir do vídeo e disponibiliza para download.',
-    link: 'https://baixa-musica.vercel.app',
-    tags: ['React', 'Node', 'TypeScript', 'NestJS'],
   },
 ]
 
