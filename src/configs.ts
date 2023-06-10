@@ -24,6 +24,12 @@ export const skillList: Skill[] = [
     link: 'https://reactjs.org/',
     imagem: '/react.png',
   },
+{
+    nome: 'React Native',
+    descricao: 'Mobile',
+    link: 'https://reactnative.dev/',
+    imagem: '/react.png',
+  },
   {
     nome: 'TypeScript',
     descricao: 'Linguagem',
@@ -41,6 +47,12 @@ export const skillList: Skill[] = [
     descricao: 'Backend',
     link: 'https://nodejs.org/',
     imagem: '/nodejs.svg',
+  },
+  {
+    nome: 'Tailwind CSS',
+    descricao: 'UI',
+    link: 'https://tailwindcss.com/',
+    imagem: '/tailwind.svg',
   },
   {
     nome: 'Express',
@@ -80,7 +92,7 @@ export const skillList: Skill[] = [
   },
   {
     nome: 'Chakra UI',
-    descricao: 'UI Library',
+    descricao: 'UI',
     link: 'https://chakra-ui.com/',
     imagem: '/chakra.png',
   },

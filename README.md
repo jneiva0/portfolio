@@ -15,3 +15,11 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+
+## Todo
+
+- [ ] Use a lib for svg icons (or get from a cdn)
+- [ ] Migrate to next.js 13.4, to app router and React Server Components
+- [ ] Add i18n with english version
+- [ ] Update tech stack (aws, trpc, RSC)
